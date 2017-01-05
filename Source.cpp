@@ -32,14 +32,14 @@ void Game() {
 	//Determines winner of game if user chooses Rock
 	if (userChoice == "Rock" || userChoice == "rock") {
 
-		if ((userChoice == "Rock" || userChoice == "rock") && cpuChoice == "Rock") {
+		if (cpuChoice == "Rock") {
 			cout << "It is a tie! Let's replay! " << endl;
 			Game();
 		}
-		else if ((userChoice == "Rock" || userChoice == "rock") && cpuChoice == "Paper") {
+		else if (cpuChoice == "Paper") {
 			cout << "Paper defeats rock! Sorry, you have been defeated." << endl;
 		}
-		else if ((userChoice == "Rock" || userChoice == "rock") && cpuChoice == "Scissors") {
+		else if (cpuChoice == "Scissors") {
 			cout << "Rock defeats scissors! Congratulations, you win!" << endl;
 		}
 	}//End rock decisions 
@@ -47,14 +47,14 @@ void Game() {
 	//Determines winner of game if user chooses Paper
 	else if (userChoice == "Paper" || userChoice == "paper") {
 
-		if ((userChoice == "Paper" || userChoice == "paper") && cpuChoice== "Paper") {
+		if (cpuChoice== "Paper") {
 			cout << "It is a tie! Let's replay! " << endl;
 			Game();
 		}
-		else if ((userChoice == "Paper" || userChoice == "paper") && cpuChoice == "Rock") {
+		else if (cpuChoice == "Rock") {
 			cout << "Paper defeats rock! Congratulations, you win!" << endl;
 		}
-		else if ((userChoice == "Paper" || userChoice == "paper") && cpuChoice == "Scissors") {
+		else if (cpuChoice == "Scissors") {
 			cout << "Scissors defeats paper! Sorry, you have been defeated." << endl;
 		}
 	}//End paper decisions 
@@ -62,14 +62,14 @@ void Game() {
 	//Determines winner of game if user chooses scissors
 	else if (userChoice == "Scissors" || userChoice == "scissors") {
 
-		if ((userChoice == "Scissors" || userChoice == "scissors") && cpuChoice == "Scissors") {
+		if (cpuChoice == "Scissors") {
 			cout << "It is a tie! Let's replay! " << endl;
 			Game();
 		}
-		else if ((userChoice == "Scissors" || userChoice == "scissors") && cpuChoice == "Rock") {
+		else if (cpuChoice == "Rock") {
 			cout << "Rock defeats scissors! Sorry, you have been defeated." << endl;
 		}
-		else if ((userChoice == "Scissors" || userChoice == "scissors") && cpuChoice == "Paper") {
+		else if (cpuChoice == "Paper") {
 			cout << "Scissors defeats paper! Congratulations, you win!" << endl;
 		}
 	}//End scissors decisions
